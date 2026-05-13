@@ -1,7 +1,9 @@
+//Praktikum EL2008 PMP
+//MODUL : 05
 //Nama : Andreas Nainggolan
 //NIM : 13224092
-//Mata kuliaih : EL2008 PMP
-//Tujuan : menghitung jumlah pulau dan pulau terbesar.
+//file : soal2.c
+//deskrpsi : menghitung jumlah pulau dan pulau terbesar.
 
 #include <stdio.h>
 #include <stdlib.h>
