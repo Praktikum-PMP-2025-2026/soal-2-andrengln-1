@@ -11,16 +11,16 @@
 int dx[] = {-1, 0, 1, 0, 1, -1, -1, 1};
 int dy[] = {0, -1, 0, 1, 1, 1, -1, -1};
 
-// Perform DFS to mark all connected 'L' as visited
+
 void dfs(char** grid, int r, int c, int n, int m) {
-	// Check bounds
+	
 	if (r < 0 || c < 0 || r >= n || c >= m || grid[r][c] != 'L')
 		return;
 	
-	// Mark cell as visited
+	
 	grid[r][c] = 'W';
 	
-	// Explore all 8 directions
+	
 	for (int i = 0; i < 8; i++) {
 		int newR = r + dx[i];
 		int newC = c + dy[i];
@@ -28,7 +28,7 @@ void dfs(char** grid, int r, int c, int n, int m) {
 	}
 }
 
-// Count the number of islands
+
 int countIslands(char** grid, int n, int m) {
 	int count = 0;
 	
@@ -59,3 +59,5 @@ int main(){
 
 
 }
+
+//source : https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1?page=8&sortBy=submissions
