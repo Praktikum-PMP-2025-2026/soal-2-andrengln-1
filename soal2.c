@@ -45,7 +45,7 @@ int countIslands(char** grid, int n, int m) {
 }
 
 int main(){
-    int M,N;
+    int i,j,r,c;
     char grid;
 
     scanf("%d %d", &M, &N);
