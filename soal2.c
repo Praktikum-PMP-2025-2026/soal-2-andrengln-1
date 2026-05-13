@@ -7,11 +7,11 @@ int dy[] = {0, -1, 0, 1, 1, 1, -1, -1};
 
 void dfs(char** grid, int r, int c, int n, int m) {
     
-    if (r < 0 || c < 0 || r >= n || c >= m || grid[r][c] != '1')
+    if (r < 0 || c < 0 || r >= n || c >= m || grid[r][c] != 'L')
         return;
 
     
-    grid[r][c] = '0';
+    grid[r][c] = 'W';
 
     
     for (int i = 0; i < 8; i++) {
@@ -46,7 +46,7 @@ int main(){
     countIslands(grid,M,N);
 
         printf("ISLANDS 0\n");
-        printf("LARGEST 0\n" );
+        printf("LARGEST 0" );
 
         return 0;
 
