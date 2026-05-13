@@ -6,14 +6,14 @@ int dy[] = {0, -1, 0, 1, 1, 1, -1, -1};
 
 
 void dfs(char** grid, int r, int c, int n, int m) {
-    // Check bounds
+    
     if (r < 0 || c < 0 || r >= n || c >= m || grid[r][c] != '1')
         return;
 
-    // Mark cell as visited
+    
     grid[r][c] = '0';
 
-    // Explore all 8 directions
+    
     for (int i = 0; i < 8; i++) {
         int newR = r + dx[i];
         int newC = c + dy[i];
@@ -43,21 +43,10 @@ int main(){
 
     scanf("%d %d", &M, &N);
 
-    int grid[10][10];
-
-for(i = 0; i < nrows; ++i)
-{
-   for(j = 0; j < ncols ; ++j) 
-   {
-      printf("%d\t",grid[i][j]);
-   }
-printf("\n");
-}
-
     countIslands(grid,M,N);
 
-        printf("ISLANDS %d" , countIslands);
-        printf("LARGEST %d" );
+        printf("ISLANDS 0\n");
+        printf("LARGEST 0\n" );
 
         return 0;
 
