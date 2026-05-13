@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int dx[] = {-1, 0, 1, 0, 1, -1, -1, 1};
@@ -39,11 +40,22 @@ int countIslands(char** grid, int n, int m) {
 int main(){
     int M,N;
     char grid;
-    
+
     scanf("%d %d", &M, &N);
 
+    int grid[10][10];
+
+for(i = 0; i < nrows; ++i)
+{
+   for(j = 0; j < ncols ; ++j) 
+   {
+      printf("%d\t",grid[i][j]);
+   }
+printf("\n");
+}
 
     countIslands(grid,M,N);
+
         printf("ISLANDS %d" , countIslands);
         printf("LARGEST %d" );
 
